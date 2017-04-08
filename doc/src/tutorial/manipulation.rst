@@ -192,7 +192,7 @@ class in SymPy.  ``x - y`` is represented as ``x + -y``, or, more completely,
 ``x + -1*y``, i.e., ``Add(x, Mul(-1, y))``.
 
     >>> expr = x - y
-    >>> srepr(x - y)
+    >>> srepr(expr)
     "Add(Symbol('x'), Mul(Integer(-1), Symbol('y')))"
 
 .. dotprint(x - y, labelfunc=srepr)
